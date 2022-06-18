@@ -67,3 +67,10 @@ plot(x, y, pch=20)
 plot(x, z, pch=20)
 
 
+x<-rnorm(100)
+y<-x+rnorm(100)
+g<-gl(2,50,labels=c("Male","Female"))
+plot(x,y)
+plot(x,y,type="n")
+points(x[g=="Male"], y[g=="Male"], col="green")
+points(x[g=="Female"], y[g=="Female"], col="blue")

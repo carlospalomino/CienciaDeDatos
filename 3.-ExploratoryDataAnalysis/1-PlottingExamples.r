@@ -66,7 +66,7 @@ plot(x, z, pch=20)
 plot(x, y, pch=20)
 plot(x, z, pch=20)
 
-
+#poner colores en los puntos
 x<-rnorm(100)
 y<-x+rnorm(100)
 g<-gl(2,50,labels=c("Male","Female"))

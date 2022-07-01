@@ -11,7 +11,7 @@ print(p)
  p <- xyplot(Ozone ~ Wind|Month, data = airquality, layout = c(5, 1))
  print(p)
 
-#always print the lastone
+#always print the last one
 #example create two groups
 #creating random data for the example
 set.seed(10)
@@ -39,3 +39,5 @@ p <- xyplot(y ~ x | f, panel = function(x, y, ...) {
  panel.lmline(x, y, col = 2) ## Overlay a simple linear regression line
 })
 print(p)
+
+ 

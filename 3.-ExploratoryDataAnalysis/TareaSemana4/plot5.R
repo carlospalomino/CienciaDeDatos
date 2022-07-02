@@ -1,0 +1,19 @@
+library(ggplot2)
+library(dplyr)
+##leyendo valores
+NEI <- readRDS("./3.-ExploratoryDataAnalysis/TareaSemana4/summarySCC_PM25.rds")
+SCC <- readRDS("./3.-ExploratoryDataAnalysis/TareaSemana4/Source_Classification_Code.rds")
+
+
+#png(filename="plot4.png", width=480, height = 480 )
+
+baltimore<-NEI[(NEI$fips=="24510" ),]
+
+
+motor<-SCC  %>% filter_all(any_vars(. %in% c("Motor")))
+baltimormotordata<-baltimore[baltimore$SCC %in% coal$SCC,]
+
+#boxplot(log10(Emissions)~year,coaldata,xlab="Anio",ylab="Emissions")      
+#title("Emisiones Coal Combustion related")
+
+#dev.off()

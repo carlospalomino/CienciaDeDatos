@@ -25,7 +25,8 @@ names<-colnames(NEI)
 data<-NEI[c(4,6)] 
 ##Guardando resumen de datos
 resumen<-aggregate(data['Emissions'], by=data['year'], sum) 
-
+png(filename="plot1.png", width=480, height = 480 )
 
 boxplot(log10(Emissions)~year,NEI,xlab="Anio",ylab="Resumen")      
 title("Emisiones por anio")
+dev.off()

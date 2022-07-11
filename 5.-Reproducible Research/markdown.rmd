@@ -14,3 +14,16 @@ hagamos un grafico de pares
 ```{r}
 pairs(airquality)
 ```
+
+Aca mostramos un modelo de regresion de ozono   
+en el viento, radiacion solar y temperatura.  
+
+```{r}
+library(stats)
+fit<- lm(Ozone ~ Wind+Solar.R+Temp, data=airquality)
+summary(fit)
+```
+
+Aca mostramos una lista sin orden
+*- *lista 1
+*-* lista 2

@@ -1,0 +1,20 @@
+## configurando opciones individuales
+
+```{r setoptions,echo=FALSE}
+opts_chunk$set(echo=FALSE, results="hide")
+```
+
+Simulando datos
+
+```{r simulatedata, echo=TRUE}
+x <-rnorm(100); y <- x +rnorm(100, sd=0.5)
+```
+
+mostrando el grafico de los datos
+
+```{r scatterplot, fig.height=4}
+par(mar= c(5,4,1,1), las=1)
+plot(x,y,main="Mis datos simulados")
+```
+
+

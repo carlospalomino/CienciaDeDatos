@@ -1,0 +1,14 @@
+# Mi Segundo documento knitr
+Carlos Palomino
+
+## Introduccion
+
+No mostraremos el codigo, pero mostraremos  
+el resultado en una linea con codigo
+
+```{r computetime,echo=FALSE}
+time<- format(Sys.time(),"%a %b %X %Y")
+rand <- rnorm(1)
+```
+
+el tiempo es `r time`. mi numero favorito es `r rand`

@@ -1,0 +1,16 @@
+## Creando tablas
+
+```{r fitmodel}
+library(datasets)
+data("airquality")
+fit <- lm(Ozone ~ Wind + Temp + Solar.R, data = airquality)
+```
+
+Aca una tabla con los coeficientes de la regresion  
+
+```{r showTable, results='asis'}
+library(xtable)
+xt <- xtable(summary(fit))
+print(xt, type="html")
+```
+

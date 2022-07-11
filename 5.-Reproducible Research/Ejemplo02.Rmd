@@ -1,0 +1,14 @@
+# Mi Segundo documento knitr
+Carlos Palomino
+
+## Introduccion
+
+Algun texto alternativo luego sigue un pedazo de codigo  
+que no se mostrara por que pusimos echo=FALSE
+
+```{r simulation,echo=FALSE}
+set.seed(1)
+x <-rnorm(100)
+mean(x)
+```
+

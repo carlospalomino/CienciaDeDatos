@@ -1,0 +1,12 @@
+Mi Primer Documento knitr
+=====================================================
+
+Algunos textos de ejemplo ("Vamos a hablar sobre R")
+
+Agregando codigo:
+
+```{r}
+set.seed(1)
+x <-rnorm(100)
+mean(x)
+```

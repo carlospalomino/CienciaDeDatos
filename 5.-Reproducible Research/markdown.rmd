@@ -1,0 +1,16 @@
+Mi primer documento RMardown
+============================
+
+Este es mi primer documento RMardown.  
+Vamos a cargar algunos datos
+
+```{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+hagamos un grafico de pares
+
+```{r}
+pairs(airquality)
+```

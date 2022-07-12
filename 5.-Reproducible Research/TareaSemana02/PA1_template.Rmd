@@ -1,0 +1,24 @@
+<center>
+# Course Proyect 1
+</center>
+
+Vamos primero a establecer nuestro directorio de trabajo,y luego a cargar los datos.  
+
+```{r cargarDatos, echo=TRUE}
+setwd("/Users/carlospalominovidal/Library/CloudStorage/OneDrive-UniversidadPeruanadeCiencias/ESTUDIOS/Especializacion DataScience/CodigoFuente/DataScience/DataScience/5.-Reproducible Research/TareaSemana02")
+data <-read.csv("activity.csv")
+```
+Luego veremos los datos y analizaremos su estructura
+```{r verDatos, echo=TRUE}
+head(data) 
+summary(data)
+str(data)
+```
+Creacion de un histograma de numero de pasos por dia
+
+```{r histograma, echo=TRUE}
+library(ggplot2)
+z <-ggplot(data, aes(as.Date(date),steps))+geom_bar(stat = "identity")+ ggtitle("Steps by day")+labs(tittle="Steps by day",x="Dates",y="Steps (quantity)")
+print(z)
+           
+```
